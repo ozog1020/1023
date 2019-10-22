@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>F**k tha police</title>
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<style>
+		body{display: block; margin:0 auto; background-image: url('bg.jpg'); background-size: cover; font-family: 'Permanent Marker', cursive; }
+
+		p {margin:0 auto; display: block; font-size:40px; text-align:center; color:black; position: relative; }
+		.txt {display: block; text-align: center; margin:  auto; color: red;}
+		#t_1 {position: absolute; background-color:yellow;   top:0px; animation: ani 2s; transform: skew(10deg,-10deg); opacity:0;}
+		#t_2 {position: absolute;  background-color:yellow;  top:150px; animation: ani 4s; transform: skew(-10deg,10deg); 
+			opacity:0;}
+		#t_3 {position: absolute;  background-color:yellow;  top:450px; animation: ani 8s; transform: skew(15deg,-15deg);opacity:0;}
+		#t_4 {position: absolute;  background-color:yellow;  top:300px; animation: ani 10s; transform: skew(-10deg,10deg);opacity:0;}
+		#t_6 {position: absolute;  background-color:yellow;  top:700px; animation: ani 12s; transform: skew(-5deg,5deg);opacity:0;}
+		#t_7 {position: absolute;  background-color:yellow;  top:450px; animation: ani 6s; opacity:0;}
+		#t_8 {position: absolute;  background-color:yellow;  right: 0px;top:10px; animation: ani 2s; transform:skew(-2deg,2deg);opacity:0; }
+		#t_9 {position: absolute;  background-color:yellow; right: 0px;top:125px; anim ation: ani 4s; transform: skew(-10deg,10deg);opacity:0;}
+		#t_10 {position: absolute;  background-color:yellow; right: 0px; top:450px;  animation: ani 6s; transform: skew(15deg,-15deg);opacity:0;}
+		#t_11 {position: absolute;  background-color:yellow; right: 0px; top:600px; animation: ani 8s; transform: skew(-10deg,10deg);opacity:0;}
+
+
+		@keyframes ani{
+			from{ opacity: 0;}
+			to{ opacity: 0;}
+		}		
+
+		.gun {display:block; margin:0 auto; top:  width: 250px; height: 250px; margin-top: 200px; z-index:2;}
+		.txt {padding-top: 20px; z-index:2;}
+		.dotew{width: 10px; height: 10px; background: white; position: absolute; animation: rrr 2s infinite ease-in-out; left: 500px;}
+		.doteb{width: 10px; height: 10px; background: black; position: absolute; animation: rrr 2s infinite ease-in-out; left: 500px;}
+
+		
+		@keyframes rrr{
+			from{ bottom: 1080px; opacity:1; }
+			to{bottom:0px; opacity:0;}
+		}
+
+		footer{ display: block; margin:0 auto; text-align: center; margin-top: 15%; text-align: center; color: #999; font-family: 'Noto Sans KR', sans-serif; font-size: 12px;}
+	</style>
+
+</head>
+
+<body>
+		
+		<audio src="nwa.mp3"  id="ss"></audio>
+
+		<p id="t_1">Right about now, NWA court is in full effect.</p>
+		<p id="t_2">Judge Dre presiding in the case of NWA versus the police department.</p>
+		<p id="t_7">Yeah, Fuck tha police Fuck Fuck</p>
+		<p id="t_3">Prosecuting attourneys are MC Ren, Ice Cube,and Eazy muthafuckin E.</p>
+		<p id="t_4">Order, order, order. Ice Cube, take the muthafuckin stand.</p>
+		<p id="t_6">Why don′t you tell everybody what the fuck you gotta say?</p>
+		<p id="t_8">ok,ok,Comin straight from the underground</p>
+		<p id="t_9">Young nigga got it bad cuz I′m brown</p>
+		<p id="t_10">And not the other color so police think</p>
+		<p id="t_11">They have the authority to kill a minority</p>
+		<div class="dotew" id="zz"></div>
+		<div class="doteb" id="yy"></div>
+
+		<img src="gun_.png" class="gun" id="mygun">
+		<p class="txt" id="mytxt">click on the gun</p>
+
+
+	<script type="text/javascript">
+
+		var a = "off"
+		mygun.onclick = function(){
+			if(a == "off"){
+				mygun.style.opacity = "0";
+				ss.play();
+				mygun = "on";
+				mytxt.style.opacity = "0";
+				t_1.style.opacity = "1"
+				t_2.style.opacity = "1"
+				t_3.style.opacity = "1"
+				t_4.style.opacity = "1"
+				t_6.style.opacity = "1"
+				t_7.style.opacity = "1"
+				t_8.style.opacity = "1"
+				t_9.style.opacity = "1"
+				t_10.style.opacity = "1"
+				t_11.style.opacity = "1"
+			}
+		}
+
+		for(var i=0; i<100; i++){
+			var b = zz.cloneNode(true);
+			b.id = i;
+			b.style.left = Math.random()*1080+"px";
+			b.style.animationDuration = Math.random()*10 +"s";
+			document.body.appendChild(b);
+		}
+		for(var i=0; i<100; i++){
+			var b = yy.cloneNode(true);
+			b.id = i;
+			b.style.left = Math.random()*1080+"px";
+			b.style.animationDuration = Math.random()*10 +"s";
+			document.body.appendChild(b);
+		}
+
+	function randomBH(min, max) {
+	  min = Math.ceil(min);
+	  max = Math.floor(max);
+	  return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	</script>
+</body>
+<footer>
+	2019&copy; HKNU design 2019286076 정영지. all rights reserved.
+</footer>
+</html>
